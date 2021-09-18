@@ -20,7 +20,9 @@ public class PartnerController {
 
     private final RestTemplate restTemplate;
 
-    @Value("${catalog.api.url:http://catalog:8080}")
+   
+    //@Value("${catalog.api.url:http://catalog:8080}")
+    @Value("${catalog.api.url:http://catalog.user2-partener-external-catalog.svc.cluster.local:8080}")
     private String remoteURL;
 
     public PartnerController(RestTemplate restTemplate) {
